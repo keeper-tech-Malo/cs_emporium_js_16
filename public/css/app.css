@@ -16306,7 +16306,7 @@ a.text-red:hover, a.text-red:focus {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.modal-content {
+.modal-contenu {
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -16320,12 +16320,11 @@ button {
   border-radius: 12px;
 }
 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 2;
-  transition: 1s ease;
+#premier-Section {
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom 30% right 35%;
+  background-size: contain;
 }
 
 header {
