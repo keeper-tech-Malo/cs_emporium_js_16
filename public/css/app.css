@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'tous';
-  src: url("../fonts/Popins/Poppins-Regular.ttf");
+  src: url("../fonts/Poppins/Poppins-Regular.ttf");
 }
 
 /*!
@@ -16320,11 +16320,83 @@ button {
   border-radius: 12px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  transition: 1s ease;
+}
+
 #premier-Section {
   background-image: url("../img/slider-1.jpg");
   background-repeat: no-repeat;
   background-position: bottom 30% right 35%;
   background-size: contain;
+}
+
+#premier-Section h1 {
+  font-family: 'tous';
+}
+
+#premier-Section h1 .emporium {
+  font-size: 105px;
+  font-weight: bold;
+}
+
+#premier-Section button {
+  border-radius: 25px;
+  border-color: #dc3545;
+}
+
+#services .row {
+  color: white;
+}
+
+#services .row > div:first-child {
+  background-image: url("../img/services/service-1.jpg");
+  height: 185px;
+  background-size: cover;
+  background-position: center;
+  background-color: red;
+}
+
+#services .row > div:first-child a {
+  color: white;
+}
+
+#services .row > div:first-child hr {
+  background-color: white;
+}
+
+#services .row > div:nth-child(2) {
+  background-image: url("../img/services/service-2.jpg");
+  height: 185px;
+  background-size: cover;
+  background-position: center;
+}
+
+#services .row > div:nth-child(2) a {
+  color: white;
+}
+
+#services .row > div:nth-child(2) hr {
+  background-color: white;
+}
+
+#services .row > div:last-child {
+  background-image: url("../img/services/slider-3.jpg");
+  height: 185px;
+  background-size: cover;
+  background-position: center;
+}
+
+#services .row > div:last-child a {
+  color: white;
+}
+
+#services .row > div:last-child hr {
+  background-color: white;
 }
 
 header {

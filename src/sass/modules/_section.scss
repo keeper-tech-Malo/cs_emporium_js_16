@@ -42,18 +42,62 @@
     background-repeat: no-repeat;
     background-position: bottom 30% right 35%;
     background-size: contain;
-    background-color: $gris;
+    
     h1{
         font-family: 'tous';
-        p{
+        .emporium{
             font-size: 105px;
             font-weight: bold;
         }
     }
     button{
-        border-radius: 25px
-        border-color: $red
-        background-color: $red
+        border-radius: 25px;
+        border-color: $red;
+        
     }
     
+}
+#services{
+    .row{
+        color:white;
+        &>div:first-child{
+            background-image: url('../img/services/service-1.jpg');
+            height: 185px;
+            background-size: cover;
+            background-position: center;
+            background-color: red;
+            a{
+                color: white;
+            }
+            hr{
+                background-color: white;
+            }
+            
+        }
+        &>div:nth-child(2){
+            background-image: url('../img/services/service-2.jpg');
+            height: 185px;
+            background-size: cover;
+            background-position: center;
+            a{
+                color: white;
+            }
+            
+            hr{
+                background-color: white
+            }
+        }
+        &>div:last-child{
+            background-image: url('../img/services/slider-3.jpg');
+            height: 185px;
+            background-size: cover;
+            background-position: center;
+            a{
+                color: white;
+            }
+            hr{
+                background-color: white
+            }
+        }
+    }
 }
