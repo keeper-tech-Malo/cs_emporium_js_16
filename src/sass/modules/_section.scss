@@ -26,6 +26,16 @@
         border-radius: 12px;
     }
 
+// Nav sticky effect
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    transition: 1s ease;
+}
+
 
 #premier-Section{
     background-image: url('../img/slider-1.jpg');
@@ -33,6 +43,17 @@
     background-position: bottom 30% right 35%;
     background-size: contain;
     background-color: $gris;
+    h1{
+        font-family: 'tous';
+        p{
+            font-size: 105px;
+            font-weight: bold;
+        }
+    }
+    button{
+        border-radius: 25px
+        border-color: $red
+        background-color: $red
+    }
+    
 }
-
-
