@@ -16295,6 +16295,10 @@ a.text-red:hover, a.text-red:focus {
   cursor: pointer;
 }
 
+#myModal {
+  background-color: white;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -16328,19 +16332,11 @@ button {
   transition: 1s ease;
 }
 
-#premier-Section {
-  background-image: url("../img/slider-1.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom 30% right 35%;
-  background-size: contain;
-}
-
-#premier-Section h1 {
+#premier-Section h2 {
   font-family: 'tous';
 }
 
-#premier-Section h1 .emporium {
-  font-size: 105px;
+#premier-Section .emporium {
   font-weight: bold;
 }
 
@@ -16515,29 +16511,6 @@ button {
   padding-bottom: 10px;
 }
 
-#myCarousel .image-pro .cache {
-  position: absolute;
-  bottom: 161px;
-  z-index: 3;
-  opacity: 0;
-  transition: 1s ease;
-}
-
-#myCarousel .image-pro .cache a {
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 0px;
-  transition: 1s ease;
-}
-
-#myCarousel .image-pro .cache a:first-child {
-  background-color: red;
-}
-
-#myCarousel .image-pro .cache a:last-child {
-  background-color: black;
-}
-
 #myCarousel .image-pro #carousel-contenu {
   transition: 1s;
   position: relative;
@@ -16587,6 +16560,10 @@ button {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+section button {
+  text-transform: uppercase;
 }
 
 header {
@@ -16639,6 +16616,7 @@ footer #tag .fin .tags {
   font-size: 90%;
   text-align: center;
   border: 1px solid grey;
+  width: max-content;
 }
 
 footer .copright {
