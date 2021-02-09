@@ -16,8 +16,8 @@ jour.addEventListener('click', () => {
     navButton.classList.replace('bg-light', 'bg-dark');
     navButton.classList.replace('text-dark', 'text-white');
     document.body.classList.remove('text-white');
-    review.querySelectorAll('.col-lg-3')[0].style.color = '';
-    review.querySelectorAll('.col-lg-3')[2].style.color = '';
+    review.querySelectorAll('.col-lg-4')[0].style.color = '';
+    review.querySelectorAll('.col-lg-4')[2].style.color = '';
     logo.style.filter = '';
     icon.querySelectorAll('div').forEach(e => {
         e.style.backgroundColor = '#333';
@@ -32,9 +32,8 @@ nuit.addEventListener('click', () => {
     navButton.classList.replace('bg-dark', 'bg-light');
     navButton.classList.replace('text-white', 'text-dark');
     document.body.classList.add('text-white');
-    review.querySelectorAll('.col-lg-3')[0].style.color = 'black';
-    review.querySelectorAll('.col-lg-3')[2].style.color = 'black';
-
+    review.querySelectorAll('.col-lg-4')[0].style.color = 'black';
+    review.querySelectorAll('.col-lg-4')[2].style.color = 'black';
     icon.classList.add('text-white');
     icon.querySelectorAll('div').forEach(e => {
         e.style.backgroundColor = '#ffffff';
@@ -43,8 +42,3 @@ nuit.addEventListener('click', () => {
         e.classList.replace('text-secondary', 'text-white');
     })
 });
-
-
-
-
-

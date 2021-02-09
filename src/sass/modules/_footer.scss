@@ -1,12 +1,15 @@
 footer{
     background-color:#212121;
+    padding:0px;
     &>.row{
         padding: 100px 10px;
         color: #9b9b9b;
         .us{
+            padding-top: 20px;
 
         }
         .post{
+            padding-top: 20px;
             
             a{
                 color: #9b9b9b;
@@ -29,6 +32,7 @@ footer{
         
     }
         #tag{
+            padding-top: 20px;
             .fin{
                 .tags{
                     font-weight: bold;
