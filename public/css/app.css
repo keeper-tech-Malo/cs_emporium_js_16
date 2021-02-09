@@ -16603,6 +16603,50 @@ header nav a:hover {
   color: black;
 }
 
+footer {
+  background-color: #212121;
+}
+
+footer > .row {
+  padding: 100px 10px;
+  color: #9b9b9b;
+}
+
+footer > .row .post a {
+  color: #9b9b9b;
+}
+
+footer > .row .post hr {
+  background-color: #353535;
+}
+
+footer span {
+  color: white;
+  font-weight: bold;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer li::before {
+  content: '>';
+  margin-right: 20px;
+}
+
+footer #tag .fin .tags {
+  font-weight: bold;
+  font-size: 90%;
+  text-align: center;
+  border: 1px solid grey;
+}
+
+footer .copright {
+  text-transform: uppercase;
+  background-color: #0a0a0a;
+  color: #838383;
+}
+
 body {
   font-family: 'tous';
   margin: 0;

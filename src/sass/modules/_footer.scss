@@ -1,0 +1,46 @@
+footer{
+    background-color:#212121;
+    &>.row{
+        padding: 100px 10px;
+        color: #9b9b9b;
+        .us{
+
+        }
+        .post{
+            
+            a{
+                color: #9b9b9b;
+            }
+            hr{
+                background-color: #353535;
+            }
+        }
+    }
+    span{
+        color: white;
+        font-weight:bold;
+    }
+    li{
+        list-style: none;
+        &::before{
+            content:'>';
+            margin-right:20px;
+        }
+        
+    }
+        #tag{
+            .fin{
+                .tags{
+                    font-weight: bold;
+                    font-size: 90%;
+                    text-align:center;
+                    border: 1px solid grey;
+                }
+            }
+        }
+    .copright{
+        text-transform: uppercase;
+        background-color: #0a0a0a;
+        color: #838383;
+    }
+}
