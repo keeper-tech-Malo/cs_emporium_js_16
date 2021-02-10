@@ -42,3 +42,20 @@ nuit.addEventListener('click', () => {
         e.classList.replace('text-secondary', 'text-white');
     })
 });
+
+// Modal
+
+let modal = document.getElementById('myModal');
+
+let modalButton = document.querySelectorAll('.modal button');
+let formulaire = document.getElementsByClassName('formulaire');
+
+let close = document.getElementsByClassName('close')[0];
+
+// Déclenche le modal lorsqu'on clique sur le bouton connexion
+
+connect.addEventListener('click', () => {
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+});
