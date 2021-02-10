@@ -16599,6 +16599,12 @@ header nav a:hover {
   color: black;
 }
 
+@media (max-width: 540px) {
+  nav {
+    display: none;
+  }
+}
+
 footer {
   background-color: #212121;
   padding: 0px;
@@ -16661,4 +16667,12 @@ body {
   font-family: 'tous';
   margin: 0;
   overflow-x: hidden;
+}
+
+@media (max-width: 540px) {
+  body {
+    margin: 0 auto;
+    overflow-x: hidden;
+    max-width: 100%;
+  }
 }

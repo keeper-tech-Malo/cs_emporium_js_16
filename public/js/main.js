@@ -6,7 +6,7 @@ let navButton = document.querySelectorAll('nav button')[2];
 let head = document.getElementsByTagName('header')[0];
 let logo = document.querySelector('img');
 let review = document.getElementById('review');
-let icon = document.getElementById('bars');
+// let icon = document.getElementById('bars');
 
 
 // Permet de passer le bodyen mode nuit 
@@ -19,9 +19,9 @@ jour.addEventListener('click', () => {
     review.querySelectorAll('.col-lg-4')[0].style.color = '';
     review.querySelectorAll('.col-lg-4')[2].style.color = '';
     logo.style.filter = '';
-    icon.querySelectorAll('div').forEach(e => {
-        e.style.backgroundColor = '#333';
-    })
+    // icon.querySelectorAll('div').forEach(e => {
+    //     e.style.backgroundColor = '#333';
+    // })
     head.querySelectorAll('a').forEach(e => {
         e.classList.replace('text-white', 'text-secondary');
     })
@@ -34,10 +34,10 @@ nuit.addEventListener('click', () => {
     document.body.classList.add('text-white');
     review.querySelectorAll('.col-lg-4')[0].style.color = 'black';
     review.querySelectorAll('.col-lg-4')[2].style.color = 'black';
-    icon.classList.add('text-white');
-    icon.querySelectorAll('div').forEach(e => {
-        e.style.backgroundColor = '#ffffff';
-    })
+    // icon.classList.add('text-white');
+    // icon.querySelectorAll('div').forEach(e => {
+    //     e.style.backgroundColor = '#ffffff';
+    // })
     head.querySelectorAll('a').forEach(e => {
         e.classList.replace('text-secondary', 'text-white');
     })
@@ -90,3 +90,27 @@ window.onclick = function (event) {
         document.body.style.overflow = '';
     }
 }
+// nav qui passe en sticky
+
+
+let header = document.getElementsByTagName('header')[0];
+let img = document.querySelector('img');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 350) {
+        if (document.body.classList.contains('bg-dark')) {
+            head.classList.add('bg-dark');
+            head.classList.remove('bg-light');
+        } else {
+            head.classList.add('bg-light');
+            head.classList.remove('bg-dark');
+        }
+        head.classList.add('sticky');
+        img.style.float = 'left';
+    } else {
+        head.classList.remove('sticky');
+        img.style.float = '';
+        head.classList.remove('bg-dark');
+        head.classList.remove('bg-light');
+    }
+});
+
