@@ -50,12 +50,35 @@ let modal = document.getElementById('myModal');
 let modalButton = document.querySelectorAll('.modal button');
 let formulaire = document.getElementsByClassName('formulaire');
 
-let close = document.getElementsByClassName('close')[0];
+let fermer = document.getElementsByClassName('fermer')[0];
 
 // Déclenche le modal lorsqu'on clique sur le bouton connexion
 
-connect.addEventListener('click', () => {
+navButton.addEventListener('click', () => {
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 
 });
+// Change de fenetre selon qu'on clique sur se connecter ou s'inscrire 
+
+modalButton[0].addEventListener('click', () => {
+    formulaire[0].classList.remove('d-none');
+    formulaire[1].classList.add('d-none');
+    modalButton[1].classList.remove('d-none');
+    modalButton[0].classList.add('d-none');
+});
+
+modalButton[1].addEventListener('click', () => {
+    formulaire[1].classList.remove('d-none');
+    formulaire[0].classList.add('d-none');
+    modalButton[0].classList.remove('d-none');
+    modalButton[1].classList.add('d-none');
+});
+
+// Ferme la page lorsqu'on clique sur le span croix
+
+fermer.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = '';
+});
+

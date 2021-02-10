@@ -246,6 +246,10 @@
     cursor: pointer;
 }
 #review{
+    .row{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .rouge{
         background-color:rgb(206, 69, 57);
         color: white;
@@ -263,6 +267,7 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        
     }
 }
 section{

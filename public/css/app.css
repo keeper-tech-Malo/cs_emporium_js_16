@@ -16554,6 +16554,11 @@ button {
   cursor: pointer;
 }
 
+#review .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
 #review .rouge {
   background-color: #ce4539;
   color: white;
