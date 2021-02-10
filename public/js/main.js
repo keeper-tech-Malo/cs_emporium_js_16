@@ -82,3 +82,11 @@ fermer.addEventListener('click', () => {
     document.body.style.overflow = '';
 });
 
+// Ferme le modal lorsqu'on clique en dehors de la fenetre
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = '';
+    }
+}
