@@ -16504,31 +16504,23 @@ button {
   margin: 0 auto;
 }
 
-#myCarousel .image-pro {
+#myCarousel #carousel-contenu {
+  transition: 1s;
+  position: relative;
+  left: 0;
+}
+
+#myCarousel .item .image-pro {
   overflow: hidden;
 }
 
-#myCarousel .image-pro img {
+#myCarousel .item .image-pro img {
   width: 100%;
   transition: ease 1s;
 }
 
-#myCarousel .image-pro:hover img {
+#myCarousel .item .image-pro:hover img {
   transform: scale(1.2);
-}
-
-#myCarousel .image-pro:hover .cache {
-  opacity: 0.7;
-}
-
-#myCarousel .image-pro:hover .cache a {
-  padding-bottom: 10px;
-}
-
-#myCarousel .image-pro #carousel-contenu {
-  transition: 1s;
-  position: relative;
-  left: 0;
 }
 
 #myCarousel .barre {

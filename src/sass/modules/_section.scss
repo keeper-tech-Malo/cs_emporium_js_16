@@ -200,30 +200,31 @@
 #myCarousel{
     overflow-x: hidden;
     margin: 0 auto;
-    .image-pro{
-        overflow: hidden;
-        img{
-            width: 100%;
-            transition: ease 1s;
-        }
-        &:hover{
+    #carousel-contenu{
+        transition: 1s;
+        position: relative;
+        left: 0;
+    }
+    .item{
+        .image-pro{
+            overflow: hidden;
+
             img{
-                transform: scale(1.2);
+                width: 100%;
+                transition: ease 1s;
             }
-            .cache{
-                opacity: 0.7;
-                a{
-                    padding-bottom: 10px;
+            &:hover{
+                img{
+                    transform: scale(1.2);
+                }
+            }
+            .item-desc{
+                .solde{
                 }
             }
         }
-        
-        #carousel-contenu{
-            transition: 1s;
-            position: relative;
-            left: 0;
-        }
     }
+    
     .barre{
         text-decoration: line-through;
         color: gray;

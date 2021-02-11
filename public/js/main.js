@@ -6,7 +6,7 @@ let navButton = document.querySelectorAll('nav button')[2];
 let head = document.getElementsByTagName('header')[0];
 let logo = document.querySelector('img');
 let review = document.getElementById('review');
-// let icon = document.getElementById('bars');
+let icon = document.getElementById('bars');
 
 
 // Permet de passer le bodyen mode nuit 
@@ -113,4 +113,28 @@ window.addEventListener('scroll', () => {
         head.classList.remove('bg-light');
     }
 });
+// Discover bg sticky
 
+let discover = document.getElementById('discover');
+
+window.addEventListener('scroll', () => {
+
+    let scrolled = window.pageYOffset;
+    let limit = discover.offsetTop + discover.offsetHeight;
+
+    if (scrolled > discover.offsetTop - 3000 && scrolled <= limit + 3000) {
+
+        discover.style.backgroundPositionY = (scrolled - discover.offsetTop - 800) * 0.3 + "px";
+
+    } else {
+
+        discover.style.backgroundPositionY = "0";
+    }
+});
+
+carousel();
+
+icon.addEventListener('click', () => {
+    icon.nextElementSibling.classList.toggle('d-none');
+    icon.classList.toggle('change');
+});
