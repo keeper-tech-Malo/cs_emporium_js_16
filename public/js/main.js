@@ -136,7 +136,3 @@ window.addEventListener('scroll', () => {
 
 carousel();
 
-icon.addEventListener('click', () => {
-    icon.nextElementSibling.classList.toggle('d-none');
-    icon.classList.toggle('change');
-});

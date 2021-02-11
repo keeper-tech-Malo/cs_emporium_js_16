@@ -16510,16 +16510,16 @@ button {
   left: 0;
 }
 
-#myCarousel .item .image-pro {
+#myCarousel .item .item-image {
   overflow: hidden;
 }
 
-#myCarousel .item .image-pro img {
+#myCarousel .item .item-image img {
   width: 100%;
   transition: ease 1s;
 }
 
-#myCarousel .item .image-pro:hover img {
+#myCarousel .item .item-image:hover img {
   transform: scale(1.2);
 }
 
