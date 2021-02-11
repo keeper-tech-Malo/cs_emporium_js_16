@@ -1,4 +1,6 @@
-
+import {
+    carousel
+} from './carousel.js'
 
 let jour = document.querySelectorAll('nav button')[0];
 let nuit = document.querySelectorAll('nav button')[1];

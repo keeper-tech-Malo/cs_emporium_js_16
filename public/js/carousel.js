@@ -44,4 +44,36 @@ function carousel() {
             e.style.backgroundColor = '';
         })
     });
-    
+    setInterval(() => {
+        cpt = (cpt + 1) % 4;
+        carousel.style.left = pos[cpt];
+        button.forEach(e => {
+            e.classList.replace('bg-secondary', 'bg-light');
+        });
+        button[cpt].classList.replace('bg-light', 'bg-secondary');
+
+    }, 5000);
+
+    window.addEventListener('keydown', event => {
+        if (event.which == '39') {
+            cpt = (cpt + 1) % 4;
+            carousel.style.left = pos[cpt];
+        } else if (event.which == '37') {
+            
+            cpt = (cpt - 1) % 4;
+            if (cpt < 0) {
+                cpt = 3;
+            }
+            carousel.style.left = pos[cpt];
+        }
+        button.forEach(e => {
+            e.classList.replace('bg-secondary', 'bg-light');
+        });
+        button[cpt].classList.replace('bg-light', 'bg-secondary');
+
+    });
+}
+
+export {
+    carousel
+}
