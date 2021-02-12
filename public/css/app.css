@@ -16295,10 +16295,6 @@ a.text-red:hover, a.text-red:focus {
   cursor: pointer;
 }
 
-#myModal {
-  background-color: white;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -16311,7 +16307,7 @@ a.text-red:hover, a.text-red:focus {
 }
 
 .modal-contenu {
-  margin: 15% auto;
+  margin: 5% auto;
   padding: 20px;
   border: 1px solid #888;
   width: 50%;
@@ -16455,10 +16451,20 @@ button {
 
 #recent .image-pro .disparait a:first-child {
   background-color: red;
+  pointer-events: none;
+}
+
+#recent .image-pro .disparait a:first-child:hover {
+  cursor: pointer;
 }
 
 #recent .image-pro .disparait a:last-child {
   background-color: black;
+  pointer-events: none;
+}
+
+#recent .image-pro .disparait:hover {
+  cursor: pointer;
 }
 
 #recent .barre {

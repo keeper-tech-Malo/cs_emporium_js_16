@@ -8,7 +8,7 @@ let navButton = document.querySelectorAll('nav button')[2];
 let head = document.getElementsByTagName('header')[0];
 let logo = document.querySelector('img');
 let review = document.getElementById('review');
-let icon = document.getElementById('bars');
+
 
 
 // Permet de passer le bodyen mode nuit 
@@ -133,6 +133,11 @@ window.addEventListener('scroll', () => {
         discover.style.backgroundPositionY = "0";
     }
 });
+
+
+
+
+
 
 carousel();
 
