@@ -21,9 +21,6 @@ jour.addEventListener('click', () => {
     review.querySelectorAll('.col-lg-4')[0].style.color = '';
     review.querySelectorAll('.col-lg-4')[2].style.color = '';
     logo.style.filter = '';
-    // icon.querySelectorAll('div').forEach(e => {
-    //     e.style.backgroundColor = '#333';
-    // })
     head.querySelectorAll('a').forEach(e => {
         e.classList.replace('text-white', 'text-secondary');
     })
